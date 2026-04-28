@@ -1,29 +1,13 @@
 {
-  "timestamp": "2026-04-28T23:25:02.394Z",
-  "version": "1.1.0",
+  "timestamp": "2026-04-28T23:29:19.915Z",
+  "version": "1.2.0",
   "d1": {
-    "error": "GitHub push failed for d1/2026-04-28.json: 409 {\"message\":\"Repository rule violations found\\n\\nSecret detected in content\\n\\n\",\"metadata\":{\"secret_scanning\":{\"bypass_placeholders\":[{\"placeholder_id\":\"3D0UvOGKrWp34pg7aTNrEDTf7vw\",\"token_type\":\"CLOU"
+    "tables_full": 18,
+    "tables_counted": 13,
+    "errors": []
   },
   "workers": {
-    "checked": 0,
-    "errors": [
-      "asgard: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "asgard-ai: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "asgard-tools: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "asgard-brain: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "asgard-vault: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "racetipping-api: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "sly-app: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "thor: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "lady-thor: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "thunder-dev: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "thunder-dispatch: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "thunder-inbox: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "thunder-revenue: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "thunder-watch: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "gh-push: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "wps-hub-v3: Unexpected token 'e', \"error code: 1042\" is not valid JSON"
-    ]
+    "workers": 17
   },
-  "status": "partial"
+  "status": "ok"
 }
