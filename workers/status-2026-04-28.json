@@ -1,0 +1,22 @@
+{
+  "snapshot_date": "2026-04-28",
+  "workers": {},
+  "errors": [
+    "asgard: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
+    "asgard-ai: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
+    "asgard-tools: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
+    "asgard-brain: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
+    "asgard-vault: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
+    "racetipping-api: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
+    "sly-app: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
+    "thor: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
+    "lady-thor: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
+    "thunder-dev: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
+    "thunder-dispatch: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
+    "thunder-inbox: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
+    "thunder-revenue: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
+    "thunder-watch: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
+    "gh-push: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
+    "wps-hub-v3: Unexpected token 'e', \"error code: 1042\" is not valid JSON"
+  ]
+}
