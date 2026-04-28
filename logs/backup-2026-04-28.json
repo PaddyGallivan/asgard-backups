@@ -1,43 +1,29 @@
 {
-  "timestamp": "2026-04-28T23:11:04.697Z",
-  "version": "1.0.0",
+  "timestamp": "2026-04-28T23:25:02.394Z",
+  "version": "1.1.0",
   "d1": {
-    "tables": 0,
-    "errors": [
-      "products: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "conversations: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "messages: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "memory: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "spend_log: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "project_events: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "project_files: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "project_chat: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "msg_groups: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "msg_inbox: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "msg_read_receipts: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "errors: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "audit_log: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "metrics: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "anomalies: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "patterns: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "decisions: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "global_rules: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "project_rules: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "feature_flags: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "hub_config: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "feature_requests: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "facts: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "claude_sessions: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "email_products: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "comms_log: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "deployments: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "builds: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "rollbacks: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
-      "system_docs: Unexpected token 'e', \"error code: 1042\" is not valid JSON"
-    ]
+    "error": "GitHub push failed for d1/2026-04-28.json: 409 {\"message\":\"Repository rule violations found\\n\\nSecret detected in content\\n\\n\",\"metadata\":{\"secret_scanning\":{\"bypass_placeholders\":[{\"placeholder_id\":\"3D0UvOGKrWp34pg7aTNrEDTf7vw\",\"token_type\":\"CLOU"
   },
   "workers": {
-    "error": "GitHub push failed for workers/status-2026-04-28.json: 409 {\"message\":\"is at 7bb698b07d2c19ab645a36cfdc2eca289af1fa7c but expected f6ad6c8f7e186b5dd66d0e86a665bf800a5edff4\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\"status\":\"409\"}"
+    "checked": 0,
+    "errors": [
+      "asgard: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
+      "asgard-ai: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
+      "asgard-tools: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
+      "asgard-brain: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
+      "asgard-vault: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
+      "racetipping-api: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
+      "sly-app: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
+      "thor: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
+      "lady-thor: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
+      "thunder-dev: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
+      "thunder-dispatch: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
+      "thunder-inbox: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
+      "thunder-revenue: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
+      "thunder-watch: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
+      "gh-push: Unexpected token 'e', \"error code: 1042\" is not valid JSON",
+      "wps-hub-v3: Unexpected token 'e', \"error code: 1042\" is not valid JSON"
+    ]
   },
-  "status": "ok"
+  "status": "partial"
 }
