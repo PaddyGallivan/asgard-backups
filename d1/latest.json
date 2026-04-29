@@ -991,41 +991,41 @@
         },
         {
           "id": 25,
-          "project_name": "SSV Sport Takeover (merged into School Sport Portal)",
+          "project_name": "Sport Portal",
           "category": "web app",
           "status": "merged",
           "live_url": "https://wps-athletics-2026.pages.dev",
           "tech_stack": "HTML/JS, Firebase, Cloudflare Pages, React",
-          "description": "School Sport Victoria carnival platform. School to State level. 1070+ carnivals/yr.",
+          "description": "School sport administration platform for Victorian schools. Eliminates $8.36M/yr in manual admin across 1,600 schools, 232 districts, 55 divisions, 16 regions. Four tools: SchoolSportPortal, SportCarnival, CarnivalTiming, SportPortal. $1/student/yr + $150/250/500 coordinator tiers.",
           "next_action": null,
           "progress_pct": 80,
           "last_updated": "2026-04-29",
           "notes": "Consolidated into School Sport Portal (id 11) on 2026-04-28",
           "sort_order": 999,
           "domains": "sportcarnival.com.au",
-          "revenue_y1": 44200,
-          "revenue_y2": 115200,
-          "revenue_y3": 270000,
+          "revenue_y1": 512000,
+          "revenue_y2": 868000,
+          "revenue_y3": 1400000,
           "revenue_category": null,
           "income_priority": 0,
           "key_features": null,
-          "scale_notes": null,
+          "scale_notes": "TAM: ~4M Australian students, ~2.3M primary across ~9,500 primary schools. $1/student/yr = $2.3M at full primary saturation + coordinator tiers. VIC alone: 1,600 schools, ~512k primary students. Houseplay (closest competitor) charges $245-$495/yr per school for single-school carnival day only. SportPortal does 10x more at lower cost with no equivalent in the district/coordinator tier space.",
           "cost_monthly": 0,
           "cost_notes": null,
           "connectors": null,
           "plugins": null,
-          "detail_md": "## SSV Sport Takeover\n**Status:** Merged into School Sport Portal (id=11)\n**Was at:** https://wps-athletics-2026.pages.dev\n\n### What it was\nSchool Sport Victoria carnival platform — full state rollout, 1,070+ carnivals/yr. Planned to handle school->district->division->region->state results pipeline.\n\n### Why merged\nScope absorbed into School Sport Portal (id=11). The SSV pipeline is now SSP's core architecture.",
+          "detail_md": "## Sport Portal\n**Pitch:** Eliminating $8.36M in annual admin from Victorian school sport\n**Live:** schoolsportportal.com.au, sportportal.com.au, sportcarnival.com.au, carnivaltiming.com\n**Repos:** LuckDragonAsgard/schoolsportportal + sportportal + sportcarnival-hub\n\n### Four tools, one login\n| Tool | URL | What It Does |\n|---|---|---|\n| School Sport Portal | schoolsportportal.com.au | Public hub. Region -> Division -> District -> School. Parents find fixtures, teams, results. |\n| SportCarnival | sportcarnival.com.au | Plan carnival: upload students once, auto-draw heats by age/gender, record results. |\n| CarnivalTiming | carnivaltiming.com | On the day: parent volunteers scan QR, tap Finish. Live scoreboard. Replaces timing-gate hire. |\n| SportPortal | sportportal.com.au | Onboarding, pricing, account management. The flagship. |\n\n### Architecture\n- CF Pages + Firebase (willy-district-sport, australia-southeast1, SDK v9.23.0 compat)\n- CF Worker schoolsportportal for /api/* routes\n- All data stored in australia-southeast1 (no offshore data — DET IPP 9 compliant)\n- Pre-completed PIA template against all 10 IPPs available on request\n\n### Pricing (from pitch)\n- Schools: $1/student/yr (~$200/yr for 200-student school)\n- District coordinators: $150/yr\n- Division coordinators: $250/yr\n- Region coordinators: $500/yr\n- All coordinator tiers FREE in 2026\n\n### The numbers\n- $8,362,146 statewide admin cost eliminated per year\n- 37x ROI for a division coordinator from day one\n- 1,600 schools, 232 districts, 55 divisions, 16 regions in Victoria\n- CRT rate: $70.97/hr (DET Victoria, July 2025)\n\n### Five-year ARR (from pitch)\n| Year | Scope | Projected ARR |\n|---|---|---|\n| 2026 | Pilot — Hobsons Bay + 2 divisions (~200 schools) | $32,000 |\n| 2027 | 3 regions, 10 divisions, 50 districts (~500 schools) | $89,000 |\n| 2028 | 8 regions, 28 divisions, 120 districts (~900 schools) | $171,000 |\n| 2029 | Statewide VIC (55 div, 232 districts, ~1,400 schools) | $280,500 |\n| 2030 | VIC lock-in + NSW/QLD pilot | $367,000–500,000 |\n\n### Compliance built in\n- PDPA 2014 (Vic) — all 10 IPPs\n- Child Safe Standards (Ministerial Order 1359)\n- VPDSS (OVIC) — Firebase ISO 27001 + SOC 2 Type II\n- NDB scheme (Privacy Act 1988 Cth)\n- SSV General Conditions of Competition 2026 age rules\n- Pre-completed PIA template available on request",
           "github_url": "https://github.com/LuckDragonAsgard/sportportal",
           "linked_workers": null,
           "created_at": "2026-04-19 12:42:17",
-          "revenue_y4": 351000,
-          "revenue_y5": 432000,
+          "revenue_y4": 2000000,
+          "revenue_y5": 3000000,
           "cash_spent": 0,
           "cash_earned": 0,
           "hours_needed": 0,
-          "recommendations": "No action needed — merged into School Sport Portal. The SSV revenue opportunity is now tracked under id=11.",
-          "revenue_y6": 0,
-          "revenue_y7": 0,
+          "recommendations": "Pitch is solid — $8.36M problem, 37x ROI, DET-compliant architecture. Next: get 5 district coordinators to sign up free in 2026. The Williamstown District and Hobsons Bay Division pages are live — demo these in person. Target SSV board meeting for formal endorsement.",
+          "revenue_y6": 3500000,
+          "revenue_y7": 4000000,
           "revenue_y8": 0,
           "revenue_y9": 0,
           "revenue_y10": 0
@@ -1239,13 +1239,13 @@
           "id": 31,
           "project_name": "Super League Yeah",
           "category": "web app",
-          "status": "merged",
-          "live_url": "https://superleagueyeah.online",
+          "status": "live",
+          "live_url": "https://superleague.streamlinewebapps.com",
           "tech_stack": "React, Vite, Supabase, Lovable.dev",
           "description": "Parallel React Fantasy AFL. Emoji reactions, push notifications, coach aliases.",
-          "next_action": null,
-          "progress_pct": 70,
-          "last_updated": "2026-04-29",
+          "next_action": "Optionally bridge mate Lovable login to v4 PIN auth, OR finalise R7 scoring formula and reload",
+          "progress_pct": 90,
+          "last_updated": "2026-04-29T12:30:00Z",
           "notes": "Merged into Super League (id=30).",
           "sort_order": 999,
           "domains": null,
@@ -1876,7 +1876,7 @@
           "connectors": null,
           "plugins": null,
           "detail_md": "## Asgard\n**Live:** https://asgard.pgallivan.workers.dev\n**Repo:** github.com/LuckDragonAsgard/asgard-source (auto-committed on every deploy)\n**Version:** v8.8.3\n\n### 7-worker mesh\nasgard (dashboard), asgard-ai (Claude chat+memory), asgard-tools (deploy relay), asgard-brain (D1 API+PIN auth), asgard-vault (KV secrets), asgard-backup (daily cron), asgard-watchdog (5-min health cron, NEW)\n\n### D1\nasgard-brain UUID b6275cb4-9c0f-4649-ae6a-f1c2e70e940f — products table (40 active rows), health_log, health_state, memory tables.\n\n### Auth\nDashboard PIN: 2967 (display). API X-Pin header: PADDY_PIN CF secret value. Jacky: JACKY_PIN CF secret.\n\n### Deploy\nPOST asgard-tools.pgallivan.workers.dev/admin/deploy with X-Pin: PADDY_PIN.\n\n### Watchdog\nhttps://asgard-watchdog.pgallivan.workers.dev/ — 9 endpoints, 5-min cron, state-change alerts to paddy@luckdragon.io + rooney.jaclyn.l@gmail.com, auto-heals asgard from GitHub.\n\n### Null-byte footgun\nClaude Write/Edit pads files with null bytes. Strip before CF deploy: python3 -c open(f,wb).write(open(f,rb).read().replace(nullbyte,empty))",
-          "github_url": "https://github.com/PaddyGallivan/asgard-source",
+          "github_url": "https://github.com/LuckDragonAsgard/asgard-source",
           "linked_workers": null,
           "created_at": "2026-04-19 12:42:47",
           "revenue_y4": 0,
@@ -2128,7 +2128,7 @@
       ]
     },
     "metrics": {
-      "count": 950,
+      "count": 988,
       "rows": [
         {
           "id": 1,
@@ -10679,11 +10679,353 @@
           "memoryUsage": 0,
           "requestsPerSecond": null,
           "timestamp": "2026-04-29T08:15:56.120Z"
+        },
+        {
+          "id": 951,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T08:31:04.683Z"
+        },
+        {
+          "id": 952,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T08:45:55.786Z"
+        },
+        {
+          "id": 953,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T09:01:04.610Z"
+        },
+        {
+          "id": 954,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T09:15:56.534Z"
+        },
+        {
+          "id": 955,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T09:31:05.918Z"
+        },
+        {
+          "id": 956,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T09:45:56.260Z"
+        },
+        {
+          "id": 957,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T10:01:07.743Z"
+        },
+        {
+          "id": 958,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T10:15:55.702Z"
+        },
+        {
+          "id": 959,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T10:31:05.239Z"
+        },
+        {
+          "id": 960,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T10:45:56.297Z"
+        },
+        {
+          "id": 961,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T11:01:07.191Z"
+        },
+        {
+          "id": 962,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T11:15:57.552Z"
+        },
+        {
+          "id": 963,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T11:31:07.885Z"
+        },
+        {
+          "id": 964,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T11:45:56.869Z"
+        },
+        {
+          "id": 965,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T12:01:11.777Z"
+        },
+        {
+          "id": 966,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T12:15:56.073Z"
+        },
+        {
+          "id": 967,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T12:31:07.551Z"
+        },
+        {
+          "id": 968,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T12:45:57.675Z"
+        },
+        {
+          "id": 969,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T13:01:10.405Z"
+        },
+        {
+          "id": 970,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T13:15:56.953Z"
+        },
+        {
+          "id": 971,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T13:31:06.820Z"
+        },
+        {
+          "id": 972,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T13:45:57.733Z"
+        },
+        {
+          "id": 973,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T14:01:15.185Z"
+        },
+        {
+          "id": 974,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T14:15:56.936Z"
+        },
+        {
+          "id": 975,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T14:30:59.472Z"
+        },
+        {
+          "id": 976,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T14:45:55.123Z"
+        },
+        {
+          "id": 977,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T15:01:15.871Z"
+        },
+        {
+          "id": 978,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T15:15:55.887Z"
+        },
+        {
+          "id": 979,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T15:31:08.218Z"
+        },
+        {
+          "id": 980,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T15:45:59.469Z"
+        },
+        {
+          "id": 981,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T16:01:12.494Z"
+        },
+        {
+          "id": 982,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T16:15:54.952Z"
+        },
+        {
+          "id": 983,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T16:31:11.225Z"
+        },
+        {
+          "id": 984,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T16:45:55.874Z"
+        },
+        {
+          "id": 985,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T17:01:16.473Z"
+        },
+        {
+          "id": 986,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T17:15:55.661Z"
+        },
+        {
+          "id": 987,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T17:31:08.268Z"
+        },
+        {
+          "id": 988,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T17:45:55.029Z"
         }
       ]
     },
     "spend_log": {
-      "count": 36,
+      "count": 37,
       "rows": [
         {
           "id": 1,
@@ -11116,6 +11458,18 @@
           "cost_usd": 0.0015312000000000001,
           "uid": "paddy",
           "sid": "c_1777443378333_5gbelv"
+        },
+        {
+          "id": 37,
+          "ts": "2026-04-29T08:21:25.688Z",
+          "provider": "anthropic",
+          "model": "claude-haiku-4-5-20251001",
+          "endpoint": "chat",
+          "prompt_tokens": 85,
+          "completion_tokens": 4,
+          "cost_usd": 0.00008400000000000001,
+          "uid": "paddy",
+          "sid": "c_1777450885099_s6hlm0"
         }
       ]
     },
@@ -11612,11 +11966,11 @@
   },
   "tables_count_only": {
     "conversations": {
-      "count": 54,
+      "count": 55,
       "rows": "redacted — may contain sensitive content"
     },
     "messages": {
-      "count": 110,
+      "count": 112,
       "rows": "redacted — may contain sensitive content"
     },
     "facts": {
@@ -11640,7 +11994,7 @@
       "rows": "redacted — may contain sensitive content"
     },
     "decisions": {
-      "count": 12668,
+      "count": 13150,
       "rows": "redacted — may contain sensitive content"
     },
     "patterns": {
