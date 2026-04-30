@@ -1,9 +1,9 @@
 {
-  "backup_date": "2026-04-29",
+  "backup_date": "2026-04-30",
   "note": "Full rows: operational tables only. Sensitive tables (facts/convos/memory etc) show count only.",
   "tables_full": {
     "products": {
-      "count": 49,
+      "count": 50,
       "rows": [
         {
           "id": 1,
@@ -956,10 +956,10 @@
           "live_url": "https://lessonlab.com.au",
           "tech_stack": "HTML5 SPA, Cloudflare Workers, D1, Stripe, Resend, Vercel",
           "description": "931 lessons across 9 subjects. VIC Curriculum 2.0 F-6. Auth, cloud save, tier gating $12/mo.",
-          "next_action": null,
-          "progress_pct": 100,
-          "last_updated": "2026-04-29",
-          "notes": null,
+          "next_action": "(1) Get PI + Cyber insurance — BizCover. (2) Lodge Q1 BAS by 28 Jul 2026. (3) Trademark LessonLab on IP Australia ~$250 class 41. (4) Verify CF zone lessonlab.com.au activates. (5) Monitor first Stripe checkout has GST on invoice.",
+          "progress_pct": 85,
+          "last_updated": "2026-05-01",
+          "notes": "v11 live across 11 subjects. All templates, SUBJ_CFG, UNITS, SCAFFOLDS complete. Apex redirect deployed (zone pending activation). Legal pages live: /privacy /terms /refund. ABN 64 697 434 898 on all pages. GST registered 23 Apr 2026. See docs/legal-compliance.md for full checklist. Source: https://github.com/LuckDragonAsgard/lessonlab",
           "sort_order": 999,
           "domains": null,
           "revenue_y1": 20800,
@@ -1243,9 +1243,9 @@
           "live_url": "https://superleague.streamlinewebapps.com",
           "tech_stack": "React, Vite, Supabase, Lovable.dev",
           "description": "Parallel React Fantasy AFL. Emoji reactions, push notifications, coach aliases.",
-          "next_action": "Optionally bridge mate Lovable login to v4 PIN auth, OR finalise R7 scoring formula and reload",
-          "progress_pct": 90,
-          "last_updated": "2026-04-29T12:30:00Z",
+          "next_action": "Opp matchup multiplier fixed (teamConceded via Squiggle history, parallel fetch). Monitor accuracy over R8-R9. Vault PIN unknown - get from Paddy and rotate.",
+          "progress_pct": 97,
+          "last_updated": "2026-05-01",
           "notes": "Merged into Super League (id=30).",
           "sort_order": 999,
           "domains": null,
@@ -1448,9 +1448,9 @@
           "live_url": "https://horseracetipping.com",
           "tech_stack": null,
           "description": "Race-day tipping competition. $20 entry. Flemington and Royal Randwick.",
-          "next_action": null,
-          "progress_pct": 10,
-          "last_updated": "2026-04-29",
+          "next_action": "Scrape TAB fields Wed/Thu before race day (auto or manual via admin panel); set up Stripe product page for pub signups; test full punter flow end-to-end",
+          "progress_pct": 50,
+          "last_updated": "2026-05-01",
           "notes": null,
           "sort_order": 999,
           "domains": "horseracetipping.com",
@@ -1817,10 +1817,10 @@
           "live_url": "https://huvfgenbcaiicatvtxak.supabase.co/functions/v1/streamline",
           "tech_stack": "Supabase Edge Functions, Claude Haiku, HTML/JS",
           "description": "Idea submission platform. Community votes. AI builds. Commission forever. Tiers $29/$99/$299.",
-          "next_action": null,
-          "progress_pct": 100,
-          "last_updated": "2026-04-29",
-          "notes": null,
+          "next_action": "Monitor real submissions. Edge fn secrets set 2026-05-01: SERVICE_ROLE_KEY + STRIPE_SECRET_KEY. Note: Supabase blocks SUPABASE_ prefix — fn uses SERVICE_ROLE_KEY.",
+          "progress_pct": 99,
+          "last_updated": "2026-05-01",
+          "notes": "v26 deployed: submit saves to DB+Stripe, analytics wired, stripe-webhook v3 uses metadata fallback, anon key fixed in vault, all legal pages live.",
           "sort_order": 999,
           "domains": "streamline.streamlinewebapps.com",
           "revenue_y1": 0,
@@ -2013,6 +2013,47 @@
           "revenue_y8": 0,
           "revenue_y9": 0,
           "revenue_y10": 0
+        },
+        {
+          "id": 53,
+          "project_name": "Family Hub",
+          "category": "Social / Family",
+          "status": "in_progress",
+          "live_url": "https://family-hub.pgallivan.workers.dev",
+          "tech_stack": "Cloudflare Workers + D1 + R2",
+          "description": "Private family social network — replaces WhatsApp/Instagram for families. Baby spam posts, family & personal chats, birthday/presents tracking, holiday photos, Christmas KK (Secret Santa), shared expense tracking (who owes who for presents, insurance, etc.), shared IDs/documents.",
+          "next_action": "Send invite links to family — each person clicks their link, picks a password, and they are in. Then test all v2 features end-to-end (chats, stories, events, transfers, vault).",
+          "progress_pct": 80,
+          "last_updated": "2026-04-30 16:39:15",
+          "notes": null,
+          "sort_order": 999,
+          "domains": null,
+          "revenue_y1": 0,
+          "revenue_y2": 0,
+          "revenue_y3": 0,
+          "revenue_category": null,
+          "income_priority": 50,
+          "key_features": "Family feed (baby spam / holiday photos), group & 1:1 chats, birthday + gift tracking, Christmas KK draw, shared expense ledger (presents / insurance / bills), secure ID/document vault",
+          "scale_notes": null,
+          "cost_monthly": 0,
+          "cost_notes": null,
+          "connectors": null,
+          "plugins": null,
+          "detail_md": "Single CF Worker serving SPA + REST API. D1: abcbe15d-9a98-4e01-82eb-c82a0acd1443. R2: family-hub-photos. 14 family members seeded with invite tokens.",
+          "github_url": "https://github.com/PaddyGallivan/family-hub",
+          "linked_workers": "family-hub",
+          "created_at": "2026-04-30 15:29:33",
+          "revenue_y4": 0,
+          "revenue_y5": 0,
+          "cash_spent": 0,
+          "cash_earned": 0,
+          "hours_needed": 0,
+          "recommendations": "",
+          "revenue_y6": 0,
+          "revenue_y7": 0,
+          "revenue_y8": 0,
+          "revenue_y9": 0,
+          "revenue_y10": 0
         }
       ]
     },
@@ -2128,7 +2169,7 @@
       ]
     },
     "metrics": {
-      "count": 988,
+      "count": 1084,
       "rows": [
         {
           "id": 1,
@@ -11021,11 +11062,875 @@
           "memoryUsage": 0,
           "requestsPerSecond": null,
           "timestamp": "2026-04-29T17:45:55.029Z"
+        },
+        {
+          "id": 989,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T18:01:12.509Z"
+        },
+        {
+          "id": 990,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T18:15:55.639Z"
+        },
+        {
+          "id": 991,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T18:31:05.558Z"
+        },
+        {
+          "id": 992,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T18:45:57.409Z"
+        },
+        {
+          "id": 993,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T19:01:08.888Z"
+        },
+        {
+          "id": 994,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T19:15:54.993Z"
+        },
+        {
+          "id": 995,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T19:31:04.382Z"
+        },
+        {
+          "id": 996,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T19:45:54.638Z"
+        },
+        {
+          "id": 997,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T20:01:08.045Z"
+        },
+        {
+          "id": 998,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T20:15:54.659Z"
+        },
+        {
+          "id": 999,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T20:31:05.595Z"
+        },
+        {
+          "id": 1000,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T20:45:54.433Z"
+        },
+        {
+          "id": 1001,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T21:01:07.024Z"
+        },
+        {
+          "id": 1002,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T21:15:54.322Z"
+        },
+        {
+          "id": 1003,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T21:31:03.962Z"
+        },
+        {
+          "id": 1004,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T21:45:17.446Z"
+        },
+        {
+          "id": 1005,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T22:00:31.827Z"
+        },
+        {
+          "id": 1006,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T22:15:17.427Z"
+        },
+        {
+          "id": 1007,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T22:30:16.444Z"
+        },
+        {
+          "id": 1008,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T22:45:25.615Z"
+        },
+        {
+          "id": 1009,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T23:00:17.249Z"
+        },
+        {
+          "id": 1010,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T23:15:16.650Z"
+        },
+        {
+          "id": 1011,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T23:30:25.998Z"
+        },
+        {
+          "id": 1012,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-29T23:45:16.858Z"
+        },
+        {
+          "id": 1013,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T00:00:26.232Z"
+        },
+        {
+          "id": 1014,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T00:15:16.918Z"
+        },
+        {
+          "id": 1015,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T00:30:16.544Z"
+        },
+        {
+          "id": 1016,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T00:45:25.716Z"
+        },
+        {
+          "id": 1017,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T01:00:16.439Z"
+        },
+        {
+          "id": 1018,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T01:15:26.136Z"
+        },
+        {
+          "id": 1019,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T01:30:16.724Z"
+        },
+        {
+          "id": 1020,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T01:45:25.691Z"
+        },
+        {
+          "id": 1021,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T02:00:17.311Z"
+        },
+        {
+          "id": 1022,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T02:15:16.372Z"
+        },
+        {
+          "id": 1023,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T02:30:25.555Z"
+        },
+        {
+          "id": 1024,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T02:45:16.424Z"
+        },
+        {
+          "id": 1025,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T03:00:25.665Z"
+        },
+        {
+          "id": 1026,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T03:15:16.476Z"
+        },
+        {
+          "id": 1027,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T03:30:16.194Z"
+        },
+        {
+          "id": 1028,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T03:45:25.737Z"
+        },
+        {
+          "id": 1029,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T04:00:16.492Z"
+        },
+        {
+          "id": 1030,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T04:15:16.188Z"
+        },
+        {
+          "id": 1031,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T04:30:25.526Z"
+        },
+        {
+          "id": 1032,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T04:45:16.221Z"
+        },
+        {
+          "id": 1033,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T05:00:25.786Z"
+        },
+        {
+          "id": 1034,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T05:15:16.752Z"
+        },
+        {
+          "id": 1035,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T05:30:16.170Z"
+        },
+        {
+          "id": 1036,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T05:45:25.275Z"
+        },
+        {
+          "id": 1037,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T06:00:17.022Z"
+        },
+        {
+          "id": 1038,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T06:15:25.531Z"
+        },
+        {
+          "id": 1039,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T06:30:16.246Z"
+        },
+        {
+          "id": 1040,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T06:45:25.701Z"
+        },
+        {
+          "id": 1041,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T07:00:16.881Z"
+        },
+        {
+          "id": 1042,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T07:15:25.580Z"
+        },
+        {
+          "id": 1043,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T07:30:16.655Z"
+        },
+        {
+          "id": 1044,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T07:45:25.541Z"
+        },
+        {
+          "id": 1045,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T08:00:35.809Z"
+        },
+        {
+          "id": 1046,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T08:15:21.997Z"
+        },
+        {
+          "id": 1047,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T08:30:32.905Z"
+        },
+        {
+          "id": 1048,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T08:45:23.263Z"
+        },
+        {
+          "id": 1049,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T09:00:35.219Z"
+        },
+        {
+          "id": 1050,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T09:15:23.803Z"
+        },
+        {
+          "id": 1051,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T09:30:33.337Z"
+        },
+        {
+          "id": 1052,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T09:45:24.320Z"
+        },
+        {
+          "id": 1053,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T10:00:46.554Z"
+        },
+        {
+          "id": 1054,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T10:15:25.439Z"
+        },
+        {
+          "id": 1055,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T10:30:38.788Z"
+        },
+        {
+          "id": 1056,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T10:45:24.055Z"
+        },
+        {
+          "id": 1057,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T11:00:41.581Z"
+        },
+        {
+          "id": 1058,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T11:15:23.787Z"
+        },
+        {
+          "id": 1059,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T11:30:35.249Z"
+        },
+        {
+          "id": 1060,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.10256410256410256,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T11:45:24.447Z"
+        },
+        {
+          "id": 1061,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.11965811965811966,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T12:00:56.273Z"
+        },
+        {
+          "id": 1062,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T12:15:34.064Z"
+        },
+        {
+          "id": 1063,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.11965811965811966,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T12:30:45.435Z"
+        },
+        {
+          "id": 1064,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T12:45:33.233Z"
+        },
+        {
+          "id": 1065,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.11965811965811966,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T13:00:49.123Z"
+        },
+        {
+          "id": 1066,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T13:15:33.062Z"
+        },
+        {
+          "id": 1067,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.11965811965811966,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T13:30:46.123Z"
+        },
+        {
+          "id": 1068,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T13:45:35.065Z"
+        },
+        {
+          "id": 1069,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.11965811965811966,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T14:00:55.563Z"
+        },
+        {
+          "id": 1070,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.11965811965811966,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T14:16:19.220Z"
+        },
+        {
+          "id": 1071,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T14:31:08.357Z"
+        },
+        {
+          "id": 1072,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.11965811965811966,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T14:46:17.120Z"
+        },
+        {
+          "id": 1073,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T15:01:08.618Z"
+        },
+        {
+          "id": 1074,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T15:16:08.284Z"
+        },
+        {
+          "id": 1075,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.11965811965811966,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T15:31:21.397Z"
+        },
+        {
+          "id": 1076,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T15:46:08.570Z"
+        },
+        {
+          "id": 1077,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.11965811965811966,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T16:01:23.314Z"
+        },
+        {
+          "id": 1078,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T16:16:07.767Z"
+        },
+        {
+          "id": 1079,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.11965811965811966,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T16:31:19.359Z"
+        },
+        {
+          "id": 1080,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T16:46:10.178Z"
+        },
+        {
+          "id": 1081,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.11965811965811966,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T17:01:25.471Z"
+        },
+        {
+          "id": 1082,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T17:16:10.969Z"
+        },
+        {
+          "id": 1083,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.11965811965811966,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T17:31:21.847Z"
+        },
+        {
+          "id": 1084,
+          "project": "cortex-scan",
+          "latency": 0,
+          "errorRate": 0.1111111111111111,
+          "memoryUsage": 0,
+          "requestsPerSecond": null,
+          "timestamp": "2026-04-30T17:46:11.598Z"
         }
       ]
     },
     "spend_log": {
-      "count": 37,
+      "count": 52,
       "rows": [
         {
           "id": 1,
@@ -11470,6 +12375,186 @@
           "cost_usd": 0.00008400000000000001,
           "uid": "paddy",
           "sid": "c_1777450885099_s6hlm0"
+        },
+        {
+          "id": 38,
+          "ts": "2026-04-30T09:51:51.312Z",
+          "provider": "openai",
+          "model": "tts-1",
+          "endpoint": "speak",
+          "prompt_tokens": 11,
+          "completion_tokens": 0,
+          "cost_usd": 0.00016499999999999997,
+          "uid": "paddy",
+          "sid": null
+        },
+        {
+          "id": 39,
+          "ts": "2026-04-30T14:34:50.079Z",
+          "provider": "groq",
+          "model": "llama-3.1-8b-instant",
+          "endpoint": "chat",
+          "prompt_tokens": 106,
+          "completion_tokens": 12,
+          "cost_usd": 0,
+          "uid": "paddy",
+          "sid": "c_1777559689997_xfd66w"
+        },
+        {
+          "id": 40,
+          "ts": "2026-04-30T14:34:51.142Z",
+          "provider": "groq",
+          "model": "llama-3.3-70b-versatile",
+          "endpoint": "chat",
+          "prompt_tokens": 105,
+          "completion_tokens": 4,
+          "cost_usd": 0,
+          "uid": "paddy",
+          "sid": "c_1777559691062_ge2iur"
+        },
+        {
+          "id": 41,
+          "ts": "2026-04-30T14:34:52.930Z",
+          "provider": "anthropic",
+          "model": "claude-haiku-4-5-20251001",
+          "endpoint": "chat",
+          "prompt_tokens": 85,
+          "completion_tokens": 6,
+          "cost_usd": 0.00009200000000000001,
+          "uid": "paddy",
+          "sid": "c_1777559692853_welhkm"
+        },
+        {
+          "id": 42,
+          "ts": "2026-04-30T14:56:04.807Z",
+          "provider": "groq",
+          "model": "llama-3.1-8b-instant",
+          "endpoint": "chat",
+          "prompt_tokens": 102,
+          "completion_tokens": 24,
+          "cost_usd": 0,
+          "uid": "paddy",
+          "sid": "c_1777560964740_9gwte4"
+        },
+        {
+          "id": 43,
+          "ts": "2026-04-30T14:56:17.650Z",
+          "provider": "groq",
+          "model": "llama-3.1-8b-instant",
+          "endpoint": "chat",
+          "prompt_tokens": 105,
+          "completion_tokens": 50,
+          "cost_usd": 0,
+          "uid": "paddy",
+          "sid": "c_1777560977585_q5oi2v"
+        },
+        {
+          "id": 44,
+          "ts": "2026-04-30T14:59:45.732Z",
+          "provider": "groq",
+          "model": "llama-3.1-8b-instant",
+          "endpoint": "chat",
+          "prompt_tokens": 116,
+          "completion_tokens": 26,
+          "cost_usd": 0,
+          "uid": "paddy",
+          "sid": "c_1777561185665_m5domr"
+        },
+        {
+          "id": 45,
+          "ts": "2026-04-30T15:04:42.409Z",
+          "provider": "groq",
+          "model": "llama-3.1-8b-instant",
+          "endpoint": "chat",
+          "prompt_tokens": 105,
+          "completion_tokens": 2,
+          "cost_usd": 0,
+          "uid": "paddy",
+          "sid": "c_1777561482341_hjkwbs"
+        },
+        {
+          "id": 46,
+          "ts": "2026-04-30T15:14:23.695Z",
+          "provider": "groq",
+          "model": "llama-3.1-8b-instant",
+          "endpoint": "chat",
+          "prompt_tokens": 103,
+          "completion_tokens": 8,
+          "cost_usd": 0,
+          "uid": "paddy",
+          "sid": "c_1777562063631_4cvinq"
+        },
+        {
+          "id": 47,
+          "ts": "2026-04-30T15:14:25.656Z",
+          "provider": "groq",
+          "model": "llama-3.1-8b-instant",
+          "endpoint": "chat",
+          "prompt_tokens": 102,
+          "completion_tokens": 8,
+          "cost_usd": 0,
+          "uid": "paddy",
+          "sid": "c_1777562065581_v8dr99"
+        },
+        {
+          "id": 48,
+          "ts": "2026-04-30T16:02:26.498Z",
+          "provider": "openai",
+          "model": "tts-1",
+          "endpoint": "speak",
+          "prompt_tokens": 30,
+          "completion_tokens": 0,
+          "cost_usd": 0.00045,
+          "uid": "paddy",
+          "sid": null
+        },
+        {
+          "id": 49,
+          "ts": "2026-04-30T16:33:13.791Z",
+          "provider": "groq",
+          "model": "llama-3.1-8b-instant",
+          "endpoint": "chat",
+          "prompt_tokens": 107,
+          "completion_tokens": 85,
+          "cost_usd": 0,
+          "uid": "paddy",
+          "sid": "c_1777566793687_89acsj"
+        },
+        {
+          "id": 50,
+          "ts": "2026-04-30T16:33:26.893Z",
+          "provider": "groq",
+          "model": "llama-3.1-8b-instant",
+          "endpoint": "chat",
+          "prompt_tokens": 109,
+          "completion_tokens": 140,
+          "cost_usd": 0,
+          "uid": "paddy",
+          "sid": "c_1777566806795_m9hjir"
+        },
+        {
+          "id": 51,
+          "ts": "2026-04-30T16:33:28.546Z",
+          "provider": "groq",
+          "model": "llama-3.1-8b-instant",
+          "endpoint": "chat",
+          "prompt_tokens": 109,
+          "completion_tokens": 52,
+          "cost_usd": 0,
+          "uid": "paddy",
+          "sid": "c_1777566808444_4ed21a"
+        },
+        {
+          "id": 52,
+          "ts": "2026-04-30T16:33:30.270Z",
+          "provider": "groq",
+          "model": "llama-3.1-8b-instant",
+          "endpoint": "chat",
+          "prompt_tokens": 105,
+          "completion_tokens": 241,
+          "cost_usd": 0,
+          "uid": "paddy",
+          "sid": "c_1777566810169_42jtjm"
         }
       ]
     },
@@ -11486,7 +12571,7 @@
       "rows": []
     },
     "project_events": {
-      "count": 26,
+      "count": 27,
       "rows": [
         {
           "id": 1,
@@ -11799,6 +12884,18 @@
           "commit_sha": null,
           "source": "paddy",
           "uid": "paddy"
+        },
+        {
+          "id": 27,
+          "ts": "2026-04-30 15:31:26",
+          "project": "falkor-ui",
+          "event": "deploy",
+          "summary": "cf_deploy updated worker falkor-ui",
+          "details": null,
+          "url": "https://falkor-ui.luckdragon.io/",
+          "commit_sha": null,
+          "source": "asgard-brain/cf_deploy",
+          "uid": "paddy"
         }
       ]
     },
@@ -11966,15 +13063,15 @@
   },
   "tables_count_only": {
     "conversations": {
-      "count": 55,
+      "count": 68,
       "rows": "redacted — may contain sensitive content"
     },
     "messages": {
-      "count": 112,
+      "count": 138,
       "rows": "redacted — may contain sensitive content"
     },
     "facts": {
-      "count": 826,
+      "count": 831,
       "rows": "redacted — may contain sensitive content"
     },
     "memory": {
@@ -11982,11 +13079,11 @@
       "rows": "redacted — may contain sensitive content"
     },
     "claude_sessions": {
-      "count": 13,
+      "count": 15,
       "rows": "redacted — may contain sensitive content"
     },
     "comms_log": {
-      "count": 36,
+      "count": 142,
       "rows": "redacted — may contain sensitive content"
     },
     "system_docs": {
@@ -11994,7 +13091,7 @@
       "rows": "redacted — may contain sensitive content"
     },
     "decisions": {
-      "count": 13150,
+      "count": 14368,
       "rows": "redacted — may contain sensitive content"
     },
     "patterns": {
