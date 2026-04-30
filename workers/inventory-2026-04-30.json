@@ -1,0 +1,24 @@
+{
+  "snapshot_date": "2026-04-30",
+  "note": "Worker existence check via HTTP is blocked (CF same-zone 1042). Listing known workers.",
+  "expected_workers": {
+    "asgard": "expected",
+    "asgard-ai": "expected",
+    "asgard-tools": "expected",
+    "asgard-brain": "expected",
+    "asgard-vault": "expected",
+    "asgard-backup": "expected",
+    "racetipping-api": "expected",
+    "sly-app": "expected",
+    "wps-hub-v3": "expected",
+    "thor": "expected",
+    "lady-thor": "expected",
+    "thunder-dev": "expected",
+    "thunder-dispatch": "expected",
+    "thunder-inbox": "expected",
+    "thunder-revenue": "expected",
+    "thunder-watch": "expected",
+    "gh-push": "expected"
+  },
+  "recent_deploys": []
+}
